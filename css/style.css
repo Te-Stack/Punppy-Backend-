@@ -183,8 +183,8 @@ h6 .new {
 
 .cardHeader{
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content:space-between;
+  align-items: flex-end;
   margin-top: 15px;
 }
 
@@ -441,6 +441,7 @@ h6 .new {
 
 .profile-main{
 	display: flex;
+  width: fit-content;
 /* width: 989px;
 height: 639px; */
 padding: 20px 16px;
@@ -518,6 +519,16 @@ box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
     right: 7px;
     width: 26px;
     height: 25px;
+    border: white solid 1px;
+    background-color: var(--green-colour);
+    border-radius: 5rem;
+}
+.postonline{
+	position: absolute;
+  bottom: 45px;
+    right: 7px;
+    width: 10px;
+    height: 10px;
     border: white solid 1px;
     background-color: var(--green-colour);
     border-radius: 5rem;

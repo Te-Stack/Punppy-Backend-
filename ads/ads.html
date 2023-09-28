@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- <link rel="stylesheet" href="./css/style2.css"> -->
     <link rel="shortcut icon" href="../img/Punppy 1.png" type="image/png">
-    <title>Manage Blog</title>
+    <title>View Ads</title>
 </head>
 <body>
     <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
@@ -38,7 +38,7 @@
       </nav>
       <div class="container-fluid">
         <div class="row">
-            <div>
+            <div >
                 <nav id="sidebarMenu" class=" col-md-4 col-lg-2 col-xl-2 d-md-block sidebar collapse" >
                     <div class="sidebar-sticky pt-5">
                       <ul class="nav flex-column">
@@ -52,7 +52,7 @@
                         </li>
                         
                         <li class="nav-item">
-                          <a class="nav-link" href="../users/">
+                          <a class="nav-link " href="../users/">
                             <span data-feather="shopping-cart"></span>
                             <span class="icon"><img src="../icons/2 User.png" ></span>
                             Users     
@@ -66,14 +66,14 @@
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link active" href="../blogs/">
+                          <a class="nav-link" href="../blogs/">
                             <span data-feather="file"></span>
                             <span class="icon"><img src="../icons/Blog icon.png" ></span>
                             Manage Blog
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="../ads/">
+                          <a class="nav-link active" href="../ads/">
                             <span data-feather="file"></span>
                             <span class="icon"><img src="../icons/Ads Icon.png" ></span>
                             Manage Ads
@@ -114,65 +114,85 @@
           
           
 
-                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 ">
-                  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                  </div>
-                  <div class="details">
-                    <div class="recentOrders">
-                      <div class="cardHeader">
-                          <div>
-                              <h3>Manage Blog Posts</h3>
-                              <p>Create, delete blog posts </p>
-                          </div>
-                          <div class="d-flex input">
-                              <span><img src="../icons/Search.png" ></span>
-                              <input type="search" name="" id="" placeholder="              Search">
-                              <select class="form-control" name="" id="">
-                                  <option value="">Action <img src="../icons/Arrow down.png"></option>
-                              </select>
-                          </div>
+                
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 col-xl-8">
+                <div class="cardHeader">
+                    <div>
+                        <h5>View Posts</h5>
+                    </div>
+                    <div class="d-flex input">
+                        <select class="form-control" name="" id="">
+                            <option value="">Action </option>
+                        </select>
+                    </div> 
+                </div>
+
+                <div class="profile-main">
+                    <div class="pics">
+                        <div class="d-flex">
+                            <div class="ellipse">
+                                <img src="../img/postman.png">
+                                <span class="postonline"></span>
+
+
+                            </div>
+                                <div class="d-flex flex-column" >
+                                    <h5 class="mb-0 mt-2 fw-bold">Robert Fox</h5>
+                                    <div class="d-flex">
+                                        <div class="mx-4">
+                                            <p><span class="fw-bold">12K</span> follower</p>
+                                            <button class=" btn btn-primary">Follow</button>
+                                        </div>
+                                        <div>
+                                            <p><span class="fw-bold">50</span> following</p>
+                                            <button class="btn btn-outline-primary">Message</button>
+                                        </div>   
+
+                                    </div>
+                                    
+                                </div>
+                            </div>                            
+                        <div>
+                            <img src="../img/three dots.png" >
+                            <img src="../img/Cancel.png" >
+
+                        </div>
                         
-                      </div>
-                      
-                      <div class="table-responsive">
-                        <table class="table table-striped table-sm">
-                          <thead>
-                            <tr>
-                              <th><input type="checkbox" class="form-check-input" id="exampleCheck1"> id</th>
-                              <th>Content</th>
-                              <th>Name</th>
-                              <th>Date</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td> <input type="checkbox" class="form-check-input" id="exampleCheck1"> 1000</td>
-                              <td>just Adopted a Puppy</td>
-                              <td>Robert Fox</td>
-                              <td>5/5/2023</td>
-                            </tr>
-                            <tr>
-                              <td> <input type="checkbox" class="form-check-input" id="exampleCheck1"> 1001</td>
-                              <td>just Adopted a Puppy</td>
-                              <td>Robert Fox</td>
-                              <td>5/5/2023</td>
-                            </tr>
-                            <tr>
-                              <td> <input type="checkbox" class="form-check-input" id="exampleCheck1"> 1002</td>
-                              <td>just Adopted a Puppy</td>
-                              <td>Robert Fox</td>
-                              <td>5/5/2023</td>
-                            </tr>
+                    </div>
+                    <div class="intro">
+                        <h5 class="fw-bold">Just Adopted a Puppy!</h5>
+                            <p>Hey fam! I 'm excited to annouce that I just adopted a new poppy named max! He 's a 3-month-old golden retriever and has already stolen my heart..<a href="">Read more</a></p>
+                    </div>
+                    <div class="highlight">
+                        <img src="../img/dog_4by3 1.png" >
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-evenly">
+                            <p><img src="../img/Thumps up.png"><span class="text-danger">Thumps up</span> .35</p>
+                            <p><img src="../img/CommentVector.png">   10</p>
+                            <p><img src="../img/Retweet vector.png">    2</p>
                             
-                            
-                          </tbody>
-                        </table>
-                      </div>
-                      
-                  </div>
-                  </div>
-                  
+                        </div>
+                        <div class="d-flex flex-md-row flex-sm-column">
+                            <div>
+                                <img src="../img/Commentpics.png">
+                            </div>
+                            <div>
+                                <input type="text" name="Write a comment" class="form-control" placeholder="Write a comment..." id="">
+                            </div>
+                            <div>
+                                <img src="../img/SendVector.png" >
+                            </div>
+
+                        </div>
+                       
+
+                    </div>
+
+                </div>
           
+                
+                </main>
          
           
           
