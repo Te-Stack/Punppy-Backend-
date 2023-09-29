@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/Punppy 1.png" type="image/png">
-    <title>View Profile</title>
+    <title>User Profile</title>
 </head>
 <body>
     <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
@@ -37,7 +37,8 @@
       </nav>
       <div class="container-fluid">
         <div class="row">
-            <div class=" col-md-4 col-lg-2 col-xl-2 d-md-block sidebar collapse">
+          <div class="row">
+            <div >
                 <nav id="sidebarMenu" class=" col-md-4 col-lg-2 col-xl-2 d-md-block sidebar collapse" >
                     <div class="sidebar-sticky pt-5">
                       <ul class="nav flex-column">
@@ -51,43 +52,43 @@
                         </li>
                         
                         <li class="nav-item">
-                          <a class="nav-link active" href="users.html">
+                          <a class="nav-link active" href="./index.html">
                             <span data-feather="shopping-cart"></span>
                             <span class="icon"><img src="../icons/2 User.png" ></span>
                             Users     
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="posts.html">
+                          <a class="nav-link" href="../posts/">
                             <span data-feather="file"></span>
                             <span class="icon"><img src="../icons/Vector.png" ></span>
                             Posts
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="blog.html">
+                          <a class="nav-link" href="../blogs/">
                             <span data-feather="file"></span>
                             <span class="icon"><img src="../icons/Blog icon.png" ></span>
                             Manage Blog
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="ads.html">
+                          <a class="nav-link" href="../ads/">
                             <span data-feather="file"></span>
                             <span class="icon"><img src="../icons/Ads Icon.png" ></span>
                             Manage Ads
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="newsletter.html">
+                          <a class="nav-link" href="../newsletters/">
                             <span data-feather="file"></span>
                             <span class="icon"><img src="../icons/Newletter icon.png" ></span>
                             Newsletter
                           </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="settings.html">
-                            <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span>
+                          <a class="nav-link" href="../settings/">
+                            <span class="icon"><img src="../icons/Settings.png"></span>
                             <span data-feather="users"></span>
                             Settings
                           </a>
@@ -107,6 +108,13 @@
                   </nav>
 
             </div>
+
+      
+          
+         
+          
+          
+        </div>
 
            
           
@@ -137,13 +145,15 @@
                                 <div class="d-flex flex-column" >
                                     <h5 class="mb-0 mt-2 fw-bold">Theresa Webb <img src="../img/creator-badge.png"></h5>
                                     <div class="d-flex">
-                                        <div class="mx-4">
-                                            <p><span class="fw-bold">12K</span> follower</p>
+                                        <div class="mx-2">
+                                            <div><span class="fw-bold">12K</span> follower</div>
                                             <button class=" btn btn-primary">Follow</button>
                                         </div>
                                         <div>
-                                            <p><span class="fw-bold">50</span> following</p>
+                                            <div><span class="fw-bold">50</span> following</div>
                                             <button class="btn btn-outline-primary">Message</button>
+                                            <img class="btn" src="../img/three dots.png" >
+                          
                                         </div>   
 
                                     </div>
@@ -151,7 +161,9 @@
                                 </div>
                             </div>                            
                         <div>
-                            <p>New York</p>
+                            <!-- <p>New York</p> -->
+                            <a href="./"><img class="btn" src="../img/Cancel.png" ></a>
+                            
 
                         </div>
                         
@@ -161,7 +173,7 @@
                             <p>Hi, I am Theresa, single and love to play chess and read rare books. I am excited to connect with fellow book lovers and chess ethusiast on this platform</p>
                     </div>
                     <div class="highlight">
-                        <h6 class="fw-bold">highlights</h6>
+                        <h6 class="fw-bold">Highlights</h6>
                         <p><img src="../img/favorite-fill-1-wght-400-grad-200-opsz-481.svg" >Single</p>
                         <p><img src="../img/home-fill-1-wght-400-grad-200-opsz-481.svg" >Lives in <span class="fw-bold">New York</span></p>
                         <p><img src="../img/thumb-up-fill-1-wght-400-grad-200-opsz-483.svg" ><span class="fw-bold">120K</span> content Views <img src="../img/divider.svg" > <span class="fw-bold">50</span> posts <img src="../img/divider.svg" > <span class="fw-bold" >24</span> answers</p>
@@ -169,7 +181,7 @@
 
                     </div>
                     <div>
-                        <h6>Topics & Interests</h6>
+                        <h6 class="fw-bold">Topics & Interests</h6>
                         <div class="topic">
                             <div class="part-1">
                                 <div class="d-flex">
@@ -240,7 +252,6 @@
                 
     
     
-    <script src="https://kit.fontawesome.com/cce40f41e2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
