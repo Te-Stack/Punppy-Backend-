@@ -114,7 +114,7 @@
           
           
 
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 col-xl-8">
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 col-xl-8 bg-light">
                 <div class="cardHeader">
                     <div>
                         <h5>View Posts</h5>
@@ -136,24 +136,17 @@
 
                             </div>
                                 <div class="d-flex flex-column" >
-                                    <h5 class="mb-0 mt-2 fw-bold">Robert Fox</h5>
+                                    <h5 class="mb-0 mt-2 fw-bold">Robert Fox <span class="text-danger fw-light fs-6">. Follow</span></h5>
                                     <div class="d-flex">
-                                        <div class="mx-4">
-                                            <p><span class="fw-bold">12K</span> follower</p>
-                                            <button class=" btn btn-primary">Follow</button>
-                                        </div>
-                                        <div>
-                                            <p><span class="fw-bold">50</span> following</p>
-                                            <button class="btn btn-outline-primary">Message</button>
-                                        </div>   
+                                       <p>Hi there, I'm Roberts and... <span> . 1h . <img src="../img/postVector.png" ></span></p>
 
                                     </div>
                                     
                                 </div>
                             </div>                            
                         <div>
-                            <img src="../img/three dots.png" >
-                            <img src="../img/Cancel.png" >
+                            <img class="btn" src="../img/three dots.png" >
+                            <img class="btn" src="../img/Cancel.png" >
 
                         </div>
                         
@@ -166,21 +159,23 @@
                         <img src="../img/dog_4by3 1.png" >
                     </div>
                     <div>
-                        <div class="d-flex justify-content-evenly">
-                            <p><img src="../img/Thumps up.png"><span class="text-danger">Thumps up</span> .35</p>
-                            <p><img src="../img/CommentVector.png">   10</p>
-                            <p><img src="../img/Retweet vector.png">    2</p>
+                        <div class="d-flex justify-content-evenly align-items-start">
+                            <p class="btn"><img src="../img/Thumps up.png"><span class="text-danger">Thumps up</span> .35</p>
+                            <p class="btn"> <img src="../img/CommentVector.png">   10</p>
+                            <p class="btn"><img src="../img/Retweet vector.png">    2</p>
                             
                         </div>
-                        <div class="d-flex flex-md-row flex-sm-column">
+                        <div>
                             <div>
                                 <img src="../img/Commentpics.png">
                             </div>
-                            <div>
-                                <input type="text" name="Write a comment" class="form-control" placeholder="Write a comment..." id="">
+                            <div class="comment">
+                                <input type="text" name="Write a comment..." class="form-control" placeholder="Write a comment..." id="">
+                                <span class="btn"> <img src="../img/SendVector.png" ></span>
+                               
                             </div>
                             <div>
-                                <img src="../img/SendVector.png" >
+                                
                             </div>
 
                         </div>
