@@ -126,6 +126,7 @@
                     <div class="d-flex input">
                         <select class="form-control" name="" id="">
                             <option value="">Action </option>
+                            
                         </select>
                     </div> 
                 </div>
@@ -236,26 +237,161 @@
                     </div>
 
                 </div>
-               <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  Launch static backdrop modal
+               <!-- Button trigger modal for unrestrict account -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#unrestrictAccount">
+                  Unrestrict Account
                 </button>
+               <!-- Button trigger modal for restrict account -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#restrictAccount">
+                  Restrict Account
+                </button>
+               <!-- Button trigger modal for ban account -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#banAccount">
+                  Ban Account
+                </button>
+               
 
-                <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <!--Unrestrict Account Modal -->
+                <div class="modal fade" id="unrestrictAccount" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <div class="modal-body">
-                        ...
+                      <div class="modal-body text-center">
+                        <div class="bg-primary text-center text-white p-2">
+                          <img src="../img/Checkmark.png">
+                          <p>Approve Ad</p>
+                        </div>
+                        <div >
+                          <p>Are you sure you want to approve and publish ad?</p>
+                        </div>
+                        <div>
+                          <!-- Button trigger modal for unrestrict account -->
+                          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#unrestrictAccountSuccess">
+                            Approve
+                          </button>
+                        </div>
                       </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Understood</button>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!--Unrestrict Account Success Modal -->
+                <div class="modal fade" id="unrestrictAccountSuccess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
+                      <div class="modal-body text-center">
+                        <div class="bg-primary text-center text-white p-2">
+                          <img src="../img/Checkmark.png">
+                          <p>Success</p>
+                        </div>
+                        <div >
+                          <p>Ad has been published!</p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- Restrict Account Modal -->
+                <div class="modal fade" id="restrictAccount" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-center">
+                        <div class="bg-danger text-center text-white p-2">
+                          <img src="../img/BigCancel.png">
+                          <p>Restrict Account</p>
+                        </div>
+                        <div >
+                          <p>Are you sure you want to restrict this account?</p>
+                        </div>
+                        <div>
+                          <!-- Button trigger modal for restrict account -->
+                          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#restrictAccountSuccess">
+                            Restrict
+                          </button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- Restrict Account Success Modal -->
+                <div class="modal fade" id="restrictAccountSuccess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-center">
+                        <div class="bg-danger text-center text-white p-2">
+                          <img src="../img/BigCancel.png">
+                          <p>Success</p>
+                        </div>
+                        <div >
+                          <p>Account has been restricted</p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- Ban Account Modal -->
+                <div class="modal fade" id="banAccount" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-center">
+                        <div class="bg-danger text-center text-white p-2">
+                          <img src="../img/BigCancel.png">
+                          <p>Ban Account</p>
+                        </div>
+                        <div >
+                          <p>Are you sure you want to delete this account?</p>
+                        </div>
+                        <div>
+                           <!-- Button trigger modal for ban account success -->
+                          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#banAccountSuccess">
+                            Ban
+                          </button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+                <!-- Ban Account Success Modal -->
+                <div class="modal fade" id="banAccountSuccess" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-center">
+                        <div class="bg-danger text-center text-white p-2">
+                          <img src="../img/BigCancel.png">
+                          <p>Success</p>
+                        </div>
+                        <div >
+                          <p>Account has been deleted</p>
+                        </div>
+                      </div>
+                      
                     </div>
                   </div>
                 </div>
